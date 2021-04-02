@@ -22,13 +22,14 @@
   </header>
 
   <div class="container">
-    <form action="post">
+    <form action="post" class = "registration_form">
       <div class="form_container">
         <h2>Регистрация</h2> 
         <input type="text" name="login" id="login_field" placeholder="Ввелите логин" required>        
         <input type="password" name="password" id="password_field" placeholder="Ввелите пароль" required>        
         <input type="email" name="email" id="email_field" placeholder="Ввелите адрес e-mail" required>
-        <input type="submit" value="Зарегистрироваться" class = "submit_button">
+        <input type="submit" value="Зарегистрироваться" id="submit_registration_button" class = "submit_button">
+        <input type="reset" value="Сбросить" class = "submit_button">
       </div>     
     </form>
   </div>
@@ -41,5 +42,6 @@
       <p class="footer_info_text">Все права защищены. &copy; 2021</p>
     </div>
   </footer>
+  <script src="registration_validate.js"></script>
 </body>
 </html>
